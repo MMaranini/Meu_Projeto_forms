@@ -1,0 +1,72 @@
+*{
+    /*border: 1px solid rgb(200,0,0);*/
+}
+body{
+    background-color: rgb(218, 248, 255);
+}
+fieldset{
+    border: 2.5px solid rgb(0, 89, 255);
+    margin-top: 2vw;
+    width: 50vw;
+    margin-left: 22.5vw;
+    border-radius: 20px;
+}
+legend{
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 89, 255);
+    border-radius: 2vw;
+    text-align: center;
+    padding: 1vw;
+}
+.caixas{
+    width: 50vw;
+    margin-top: 1vw;
+}
+.prime-caixas{
+    font-size: 1.4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 6.2vw;
+}
+#idd, #peso, #alt{
+    width: 4vw;
+    height: 1.7vw;
+    border: 2.4px solid rgb(0, 89, 255);
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+}
+.questoes{
+    font-size: 1.4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 6.2vw;
+    margin-top: 2vw;
+}
+.radios-input{
+    margin-left: 6.2vw;
+    color: rgb(0, 89, 255);
+}
+.radios-label{
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.controle{
+    border: 2.4px solid rgb(0, 89, 255);
+    border-radius: 0.5vw;
+    height: 1.7vw;
+    width: 37vw;
+    margin-left: 6.2vw;
+    margin-top: 0.7vw;
+    display: flex;
+}
+.btn-enviar{
+    font-size: 1.2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 6.2vw;
+    margin-top: 1vw;
+    background-color: rgb(0, 89, 255);
+    color: rgb(255,255,255);
+    border: 2.4px solid rgb(0, 89, 255);
+    border-radius: 7px;
+    width: 5vw;
+    height: 2vw;
+}
