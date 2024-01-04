@@ -2,7 +2,248 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Forms Saúde</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
         <link rel="stylesheet" href="projeto_forms.css">
     </head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend>Pesquisa</legend>
+                <div class="caixas">
+                    <label for="idd">Idade:</label>
+                    <input type="number" class="controle" id="idd" name="idd" required>
+                </div>
+                <div class="caixas">
+                    <label for="peso">Peso:</label>
+                    <input type="number" class="controle" id="peso" name="peso" required>
+                </div>
+                <div class="caixas">
+                    <label for="alt">Altura:</label>
+                    <input type="number" class="controle" id="alt" name="alt" required>
+                </div>
+                <div class="caixas">
+                    <label>Idade da menarca: </label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="menarca_idd" id="menarca_idd1" value=1 required>
+                        <label class="radios-label" for="menarca_idd1">
+                            Menor ou igual a 11 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="menarca_idd" id="menarca_idd2" value=1 required>
+                        <label class="radios-label" for="menarca_idd2">
+                            De 12 a 13 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="menarca_idd" id="menarca_idd3" value=0 required>
+                        <label class="radios-label" for="menarca_idd3">
+                            Outro.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Tem filhos?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="filhos" id="filhos1" value=1 required>
+                        <label class="radios-label" for="filhos1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="filhos" id="filhos2" value=0 required>
+                        <label class="radios-label" for="filhos2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Idade do primeiro filho: </label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="idd-prime-filho" id="idd-prime-filho1" value=0 required>
+                        <label class="radios-label" for="idd-prime-filho1">
+                            Menos de 20 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="idd-prime-filho" id="idd-prime-filho2" value=1 required>
+                        <label class="radios-label" for="idd-prime-filho2">
+                            De 20 a 24 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="idd-prime-filho" id="idd-prime-filho3" value=2 required>
+                        <label class="radios-label" for="idd-prime-filho3">
+                            De 25 a 29 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="idd-prime-filho" id="idd-prime-filho4" value=3 required>
+                        <label class="radios-label" for="idd-prime-filho4">
+                            A partir de 30 anos.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="idd-prime-filho" id="idd-prime-filho5" value=4 required>
+                        <label class="radios-label" for="idd-prime-filho5">
+                            Não tenho filhos.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label for="menopausa">Idade da menopausa: </label>
+                    <input type="text" class="controle" id="menopausa" name="menopausa" required>
+                </div>
+                <div class="caixas">
+                    <label for="mamografia">Birads da última mamografia: </label>
+                    <input type="text" class="controle" id="mamografia" name="mamografia" required>
+                </div>
+                <div class="caixas">
+                    <label>Hiperplasia atípica?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="hiperplasia" id="hiperplasia1" value=1 required>
+                        <label class="radios-label" for="hiperplasia1">
+                            Sim
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="hiperplasia" id="hiperplasia2" value=0 required>
+                        <label class="radios-label" for="hiperplasia2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Já tomou anticoncepcionais?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="contraceptivo" id="contraceptivo1" value=1 required>
+                        <label class="radios-label" for="contraceptivo1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="contraceptivo" id="contraceptivo2" value=0 required>
+                        <label class="radios-label" for="contraceptivo2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Histórico familiar (Parentes de primeiro grau) de câncer?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="historico" id="hitorico1" value=1 required>
+                        <label class="radios-label" for="historico1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="historico" id="historico2" value=0 required>
+                        <label class="radios-label" for="historico2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Já reailizou teste genético, caso sim, detectada alguma alteração?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="genetica" id="genetica1" value=1 required>
+                        <label class="radios-label" for="genetica1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="genetica" id="genetica2" value=0 required>
+                        <label class="radios-label" for="genetica2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Já realizou radioterapia na região do tórax?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="radioterapia" id="radioterapia1" value=1 required>
+                        <label class="radios-label" for="radioterapia1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="radioterapia" id="radioterapia2" value=0 required>
+                        <label class="radios-label" for="radioterapia2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label for="carga">Carga horária atividade física por semana: </label>
+                    <input type="text" class="controle" id="carga" name="carga" required>
+                </div>
+                <div class="caixas">
+                    <label>Já realizou cirurgia retirada dos ovários?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="ovarios" id="ovarios1" value=1 required>
+                        <label class="radios-label" for="ovarios1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="ovarios" id="ovarios2" value=0 required>
+                        <label class="radios-label" for="ovarios2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Já necessitou fazer biópsia de mama?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="biopsia" id="biopsia1" value=1 required>
+                        <label class="radios-label" for="biopsia1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="biopsia" id="biopsia2" value=0 required>
+                        <label class="radios-label" for="biopsia2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Mamas Densas?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="mamas" id="mamas1" value=1 required>
+                        <label class="radios-label" for="mamas1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="mamas" id="mamas2" value=0 required>
+                        <label class="radios-label" for="mamas2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label>Já fez uso de reposição hormonal?</label>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="hormonio" id="hormonio1" value=1 required>
+                        <label class="radios-label" for="hormonio1">
+                            Sim.
+                        </label>
+                    </div>
+                    <div class="checks">
+                        <input class="radios-input" type="radio" name="hormonio" id="hormonio2" value=0 required>
+                        <label class="radios-label" for="hormonio2">
+                            Não.
+                        </label>
+                    </div>
+                </div>
+                <div class="caixas">
+                    <label for="bebida">Bebe bebida alcoólica? Quantas porções por semana?</label>
+                    <input type="number" class="controle" id="bebida" name="bebida" required>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </fieldset>
+        </form>
+    </body>
 </html>
